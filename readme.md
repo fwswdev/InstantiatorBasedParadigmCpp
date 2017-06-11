@@ -7,18 +7,14 @@ I discovered by accident, and I like this new paradigm of programming. This way,
 
 To illustrate here is a very simple source code on how I did it:
 
-Websocket.cpp 
-– Both the class declaration and definition are located here. At the end, you will see the instantiator. It will return an abstract base class pointer.
+Websocket.cpp – Both the class declaration and definition are located here. At the end, you will see the instantiator. It will return an abstract base class pointer.
 
-Websocket.h
-- This will contain only the instantiator functions.
+Websocket.h - This will contain only the instantiator functions.
 
-AbaseWebSocket.h
-- This the abstract base class that websocket class will inherit.
+AbaseWebSocket.h - This the abstract base class that websocket class will inherit.
 
-main.cpp
-- Demonstration of how to use it.
+main.cpp - Demonstration of how to use it.
 
 The instantiator can produce new instances or it could produce a static instance (aka Singleton).
 
-Again, this way, everyone will be forced to doing a very important principle: “Program to Interface, not to an Implementation.”  Because there is no way for you to be able to instantiate a concrete class because they will all be inside the cpp file, thus you need to go to the necessary abstractions.
+Again, this way, everyone will be forced to do a very important principle: “Program to Interface, not to an Implementation.”  Because there is no way for you to be able to instantiate a concrete class because they will all be inside the cpp file, thus you need to go to the necessary abstractions.
